@@ -1,0 +1,57 @@
+crime scene report - Theft of the CS50 duck took place at 10:15am at the Chamberlin Street courthouse. Interviews were conducted today with three witnesses who were present at the time - each of their interview transcripts mentions the courthouse.
+
+witnesses - 
+161|Ruth|2020|7|28|Sometime within ten minutes of the theft, I saw the thief get into a car in the courthouse parking lot and drive away. If you have security footage from the courthouse parking lot, you might want to look for cars that left the parking lot in that time frame.
+162|Eugene|2020|7|28|I don't know the thief's name, but it was someone I recognized. Earlier this morning, before I arrived at the courthouse, I was walking by the ATM on Fifer Street and saw the thief there withdrawing some money.
+163|Raymond|2020|7|28|As the thief was leaving the courthouse, they called someone who talked to them for less than a minute. In the call, I heard the thief say that they were planning to take the earliest flight out of Fiftyville tomorrow. The thief then asked the person on the other end of the phone to purchase the flight ticket.
+
+courthouse records 10 minutes after theft at 10:15am
+260|2020|7|28|10|16|exit|5P2BI95
+261|2020|7|28|10|18|exit|94KL13X
+262|2020|7|28|10|18|exit|6P58WS2
+263|2020|7|28|10|19|exit|4328GD8
+264|2020|7|28|10|20|exit|G412CB7
+265|2020|7|28|10|21|exit|L93JTIZ
+266|2020|7|28|10|23|exit|322W7JE
+267|2020|7|28|10|23|exit|0NTHK55
+
+people leaving the courthouse -
+221103|Patrick|(725) 555-4692|2963008352|5P2BI95
+243696|Amber|(301) 555-4174|7526138472|6P58WS2
+396669|Elizabeth|(829) 555-5269|7049073643|L93JTIZ
+398010|Roger|(130) 555-0289|1695452385|G412CB7
+467400|Danielle|(389) 555-5198|8496433585|4328GD8
+514354|Russell|(770) 555-1861|3592750733|322W7JE
+560886|Evelyn|(499) 555-9472|8294398571|0NTHK55
+686048|Ernest|(367) 555-5533|5773159633|94KL13X
+
+recognized person who withdrew money -
+49610011|withdraw|50|Ernest
+86363979|deposit|10|Robert
+26013199|withdraw|35|Russell
+16153065|withdraw|80|Roy
+28296815|withdraw|20|Bobby
+25506511|withdraw|20|Elizabeth
+28500762|withdraw|48|Danielle
+76054385|withdraw|60|Madison
+81061156|withdraw|30|Victoria
+
+phone calls on day of theft-
+Caller|Receiver|cNum|rNum
+Roger|Jack|(130) 555-0289|(996) 555-8899
+Evelyn|Larry|(499) 555-9472|(892) 555-8872
+Ernest|Berthold|(367) 555-5533|(375) 555-8161
+Evelyn|Melissa|(499) 555-9472|(717) 555-1342
+Madison|James|(286) 555-6063|(676) 555-6554
+Russell|Philip|(770) 555-1861|(725) 555-3243
+Kimberly|Jacqueline|(031) 555-6622|(910) 555-3251
+Bobby|Doris|(826) 555-1652|(066) 555-9701
+Victoria|Anna|(338) 555-6650|(704) 555-2131
+
+people in all 3 tables from witnesses
+Ernest; passport=5773159633
+Russell; passport=3592750733
+
+Flights-
+18|3592750733|4C|18|8|6|2020|7|29|16|0|514354|Russell|(770) 555-1861|3592750733|322W7JE 4PM
+36|5773159633|4A|36|8|4|2020|7|29|8|20|686048|Ernest|(367) 555-5533|5773159633|94KL13X  8:20AM

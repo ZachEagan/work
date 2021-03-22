@@ -1,0 +1,13 @@
+Normal Search https://www.google.com/search?q=test
+Feeling lucky https://www.google.com/search?ei=0HghYO_NKeWP5wLD3rKgCA&iflsig=AINFCbYAAAAAYCGG4NnXeTo_310jBrJnCNA85e2GjfyK&q=test&btnI=I%27m+Feeling+Lucky
+
+Image Search https://www.google.com/search?tbm=isch&q=test
+
+Advanced Search base URL https://www.google.com/advanced_search
+example http://google.com/search?as_q=all&as_epq=exact&as_oq=any&as_eq=none&as_qdr=all&as_occt=any
+all these words: as_q as_qdr
+this exact word or phrase: as_epq
+any of these words: as_oq as_occt
+none of these words: as_eq
+
+change

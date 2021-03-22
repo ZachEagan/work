@@ -1,0 +1,56 @@
+.links{
+    text-align: right;
+    display: inline;
+    float: right;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.advancedImg{
+    width: 10%;
+    height: 30px;
+}
+
+.advancedForm{
+    line-height: 50px;
+    height: 50px;
+}
+
+.main{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search{
+    width: 100%;
+    height: 10%;
+}
+
+
+.main form,
+.main form input{
+    display: inline;
+}

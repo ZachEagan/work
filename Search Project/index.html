@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="search.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+        </script>
+        <script>
+            window.onload = function() {
+                var src1 = document.getElementById("q"),
+                    dst1 = document.getElementById("lucky_q");
+                src1.addEventListener('input', function() {
+                    dst1.value = src1.value;
+                });
+            };
+        </script>
+    </head>
+    <body>
+        <div class="links">
+            <a href="indexImage.html">Images</a>
+            <a href="indexAdvanced.html">Advanced</a>
+        </div>
+        <div class="main">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <form action="https://google.com/search">
+                <input class="search" type="text" id="q" name="q">
+                <br>
+                <input class="button" type="submit" value="Google Search">
+                <!-- Maybe put in sequential form element with duplicated hidden input text
+                <a href="https://www.google.com/url?q=https://stackoverflow.com/" class="button"><span class="button">I'm Feeling Lucky</span></a>-->
+            </form>
+            <form action="https://www.google.com/search">
+                <input type=hidden name="ei" value="0HghYO_NKeWP5wLD3rKgCA&iflsig=AINFCbYAAAAAYCGG4NnXeTo_310jBrJnCNA85e2GjfyK">
+                <input type=hidden id=lucky_q name="q">
+                <input type=hidden name="btnI" value="I%27m+Feeling+Lucky">
+                <input class="button" type="submit" value="I'm Feeling Lucky">
+            </form>
+        <div class="main"></div>
+        
+    </body>
+</html>

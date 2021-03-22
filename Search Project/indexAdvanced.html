@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="search.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+        </script>
+        <script>
+            window.onload = function() {
+                var src1 = document.getElementById("as_q"),
+                    dst1 = document.getElementById("as_qdr");
+                src1.addEventListener('input', function() {
+                    dst1.value = src1.value;
+                });
+
+                var src2 = document.getElementById("as_oq"),
+                    dst2 = document.getElementById("as_occt");
+                src2.addEventListener('input', function() {
+                    dst2.value = src2.value;
+                });
+            };
+        </script>
+    </head>
+    <body>
+        <img class="advancedImg" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <div class="links">
+            <a href="index.html">Search</a>
+            <a href="indexImage.html">Images</a>
+        </div>
+        <form class="advancedForm" action="https://google.com/search">
+            <label for="as_q">all these words:</label>
+            <input type="text" id="as_q" name="as_q" >
+            <input type="hidden" id="as_qdr" name="as_qdr">
+            <br>
+            <label for="as_epq">this exact word or phrase:</label>
+            <input type="text" id="as_epq" name="as_epq" >
+            <br>
+            <label for="as_oq">any of these words:</label>
+            <input type="text" id="as_oq" name="as_oq" >
+            <input type="hidden" id="as_occt" name="as_occt">
+            <br>
+            <label for="as_epq">none of these words:</label>
+            <input type="text" id="as_eq" name="as_eq">
+            <br>
+            <input type="submit" value="Google Search">
+        </form>
+    </body>
+</html>

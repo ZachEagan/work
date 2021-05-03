@@ -2,4 +2,8 @@
 where x in subquery doesn't work because no primary key in Rating table
 */
 DELETE FROM Rating
-join Movie on r.mID=m.mID AND r.stars < 4 AND (m.year < 1970 or m.year > 2000)
+where ROWID in (
+    select r.ROWID from Rating r
+    join Movie m on m.mID=r.mID
+    where r.stars < 4 AND (m.year < 1970 or m.year > 2000)
+) 

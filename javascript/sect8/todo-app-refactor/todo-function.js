@@ -1,3 +1,7 @@
+// add event handler to checkbox
+// modify the correct objects completed property -> toggleTodo
+// Save and rerender
+
 const getSavedTodos = function (){
     const todoJSON = localStorage.getItem('todos')
 
@@ -10,21 +14,50 @@ const saveTodos = function (todos){
     localStorage.setItem('todos', JSON.stringify(todos))
 }
 
+//Remove a todo from the list
+const removeTodo = function(id){
+    const todoIndex = todos.findIndex(function(todo) {
+        return todo.id == id
+    })
 
-// 1. Setup a root div
-// 2. Setup and append a checkbox
-//someNode.setAttribute('type', 'checkbox')
-// 3. Setup and append a span (set text)
-// 4. Setup and append a button (set text)
+    if(todoIndex > -1){
+        todos.splice(todoIndex, 1)
+    }
+}
+
+const toggleTodo = function(id){
+    const todoIndex = todos.findIndex(function(todo) {
+        return todo.id == id
+    })
+
+    if(todoIndex > -1){
+        todos[todoIndex].completed = !todos[todoIndex].completed
+    }
+}
+
+
 const generateTodoDom = function(todo){
     const todoEl = document.createElement('div')
     const textEl = document.createElement('span')
     
     const checkboxEl = document.createElement('input')
     checkboxEl.setAttribute('type', 'checkbox')
+    // Check checkbox if todo completed
+    checkboxEl.checked = todo.completed
+    // Attach checkbox event to keep completed propery in sync
+    checkboxEl.addEventListener('change', function(){
+        toggleTodo(todo.id)
+        saveTodos(todos)
+        renderTodos(todos, filters)
+    })
 
     const deleteButton = document.createElement('button')
     deleteButton.textContent = 'x'
+    deleteButton.addEventListener('click', function(e){
+        removeTodo(todo.id)
+        saveTodos(todos)
+        renderTodos(todos, filters)
+    })
 
     todoEl.appendChild(checkboxEl)
 
@@ -36,6 +69,8 @@ const generateTodoDom = function(todo){
 
     todoEl.appendChild(textEl)
     todoEl.appendChild(deleteButton)
+
+    
 
     return todoEl
 }
